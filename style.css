@@ -1,0 +1,209 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html{
+  scroll-behavior:smooth;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 59px;
+}
+#navbar {
+  background: rgb(68, 63, 63);
+  position: sticky;
+  top: 0px;
+  display: flex;
+  align-items: center;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#logo {
+  margin: 0px -14px;
+}
+#logo img {
+  margin: 4px 35px;
+  border-radius: 100%;
+}
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  font-family: "Permanent Marker", cursive;
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+#home::before {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: url("home.jpg") no-repeat center center/cover;
+  z-index: -1;
+  height: 92%;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+}
+#home h1 {
+  color: rgb(8, 1, 1);
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+#home p {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: "Lobster", cursive;
+}
+.primary {
+  text-align: center;
+  font-size: 2.8rem;
+  padding: 10px 40px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.secondry {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+
+  font-size: 1.8rem;
+  padding: 10px 40px;
+}
+.btn {
+  font-weight: bold;
+  opacity: 0.8;
+  padding: 7px 20px;
+  color: black;
+  border-radius: 10px;
+  margin: 19px;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+#services {
+  margin: 0px 34px;
+  margin-bottom: 17px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 34px;
+  border-radius: 23px;
+  background-color: rgb(236, 233, 219);
+}
+
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
+#services .box p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/* #clients-section {
+  height: 230px;
+} */
+#clients-section::before {
+  content: "";
+  position: absolute;
+  background: url("client-background.jpg");
+  width: 100%;
+  height: 30%;
+  z-index: -1;
+  opacity: 0.4;
+  /* height: 100%; */
+}
+.clients-item {
+  padding: 34px;
+}
+.clients-item img {
+  height: 100px;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* contact-section */
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("contact us-background.jpg") no-repeat center center/cover;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Lobster", cursive;
+}
+#contact-box textarea{
+  width: 80%;
+
+  padding-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+#contact-box input,
+textarea {
+  /* text-align: center; */
+  display: inline;
+  border-radius: 10px;
+  width: 80%;
+
+  padding: 0.5rem;
+}
+.form-group:hover{
+   width: 800px ;
+}
